@@ -1,0 +1,12 @@
+{
+  "model": "hy4-preview",
+  "messages": [
+    {
+      "role": "user",
+      "content": "请回答我的问题。"
+    }
+  ],
+  "reasoning_effort": "high",
+  "max_tokens": 8192,
+  "stream": false
+}

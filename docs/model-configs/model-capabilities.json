@@ -1,0 +1,226 @@
+{
+  "checked_date": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "base_url": "http://127.0.0.1:8317/v1",
+  "chat_endpoint": "http://127.0.0.1:8317/v1/chat/completions",
+  "authentication": "Authorization: Bearer <your-local-gateway-key>",
+  "source_endpoints": [
+    "https://copilot.tencent.com/v2/enterprises/personal/models",
+    "https://copilot.tencent.com/v3/config"
+  ],
+  "models": [
+    {
+      "model": "glm-5.3",
+      "recommended_reasoning_effort": "high",
+      "daily_max_tokens": 8192,
+      "catalog_max_input_tokens": 1000000,
+      "catalog_max_output_tokens": 64000,
+      "catalog_context_window": {
+        "defaultLength": 300000,
+        "supportedLengths": [
+          300000,
+          600000,
+          1000000
+        ]
+      },
+      "v2_reasoning_metadata": {
+        "canDisableThinking": false,
+        "defaultEffort": "high",
+        "summary": "auto",
+        "supportedEfforts": [
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "v3_reasoning_metadata": {
+        "effort": "medium",
+        "summary": "auto"
+      },
+      "validation": {
+        "chat_single_turn": true,
+        "chat_multi_turn": true,
+        "responses": true,
+        "declared_output_limit_parameter_accepted": true,
+        "multi_turn_reasoning_text_returned": false,
+        "multi_turn_reported_reasoning_tokens": 3
+      }
+    },
+    {
+      "model": "glm-5.3-flash",
+      "recommended_reasoning_effort": "high",
+      "daily_max_tokens": 8192,
+      "catalog_max_input_tokens": 1000000,
+      "catalog_max_output_tokens": 131072,
+      "catalog_context_window": {
+        "defaultLength": 300000,
+        "supportedLengths": [
+          300000,
+          600000,
+          1000000
+        ]
+      },
+      "v2_reasoning_metadata": {
+        "canDisableThinking": false,
+        "defaultEffort": "high",
+        "summary": "auto",
+        "supportedEfforts": [
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "v3_reasoning_metadata": {
+        "canDisableThinking": false,
+        "defaultEffort": "high",
+        "summary": "auto",
+        "supportedEfforts": [
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "validation": {
+        "chat_single_turn": true,
+        "chat_multi_turn": true,
+        "responses": true,
+        "declared_output_limit_parameter_accepted": true,
+        "multi_turn_reasoning_text_returned": true,
+        "multi_turn_reported_reasoning_tokens": 10
+      }
+    },
+    {
+      "model": "kimi-k3-1",
+      "recommended_reasoning_effort": "medium",
+      "daily_max_tokens": 8192,
+      "catalog_max_input_tokens": 1000000,
+      "catalog_max_output_tokens": 32000,
+      "catalog_context_window": {
+        "defaultLength": 300000,
+        "supportedLengths": [
+          300000,
+          600000,
+          1000000
+        ]
+      },
+      "v2_reasoning_metadata": {
+        "effort": "medium",
+        "summary": "auto"
+      },
+      "v3_reasoning_metadata": {
+        "effort": "medium",
+        "summary": "auto"
+      },
+      "validation": {
+        "chat_single_turn": true,
+        "chat_multi_turn": true,
+        "responses": true,
+        "declared_output_limit_parameter_accepted": true,
+        "multi_turn_reasoning_text_returned": true,
+        "multi_turn_reported_reasoning_tokens": 35
+      }
+    },
+    {
+      "model": "hy4-preview",
+      "recommended_reasoning_effort": "high",
+      "daily_max_tokens": 8192,
+      "catalog_max_input_tokens": 960000,
+      "catalog_max_output_tokens": 64000,
+      "catalog_context_window": {
+        "defaultLength": 300000,
+        "supportedLengths": [
+          300000,
+          600000,
+          960000
+        ]
+      },
+      "v2_reasoning_metadata": {
+        "canDisableThinking": false,
+        "defaultEffort": "high",
+        "summary": "auto",
+        "supportedEfforts": [
+          "high"
+        ]
+      },
+      "v3_reasoning_metadata": {
+        "canDisableThinking": false,
+        "defaultEffort": "high",
+        "summary": "auto",
+        "supportedEfforts": [
+          "high"
+        ]
+      },
+      "validation": {
+        "chat_single_turn": true,
+        "chat_multi_turn": true,
+        "responses": true,
+        "declared_output_limit_parameter_accepted": true,
+        "multi_turn_reasoning_text_returned": true,
+        "multi_turn_reported_reasoning_tokens": 41
+      }
+    },
+    {
+      "model": "hy3",
+      "recommended_reasoning_effort": "high",
+      "daily_max_tokens": 8192,
+      "catalog_max_input_tokens": 192000,
+      "catalog_max_output_tokens": 64000,
+      "catalog_context_window": null,
+      "v2_reasoning_metadata": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "v3_reasoning_metadata": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "validation": {
+        "chat_single_turn": true,
+        "chat_multi_turn": true,
+        "responses": true,
+        "declared_output_limit_parameter_accepted": true,
+        "multi_turn_reasoning_text_returned": true,
+        "multi_turn_reported_reasoning_tokens": 53
+      }
+    },
+    {
+      "model": "deepseek-v4.1-flash",
+      "recommended_reasoning_effort": "high",
+      "daily_max_tokens": 8192,
+      "catalog_max_input_tokens": 1000000,
+      "catalog_max_output_tokens": 128000,
+      "catalog_context_window": {
+        "defaultLength": 300000,
+        "supportedLengths": [
+          300000,
+          600000,
+          1000000
+        ]
+      },
+      "v2_reasoning_metadata": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "v3_reasoning_metadata": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "validation": {
+        "chat_single_turn": true,
+        "chat_multi_turn": true,
+        "responses": true,
+        "declared_output_limit_parameter_accepted": true,
+        "multi_turn_reasoning_text_returned": true,
+        "multi_turn_reported_reasoning_tokens": 23
+      }
+    }
+  ],
+  "request_count": 84,
+  "http_status_counts": {
+    "200": 83,
+    "400": 1
+  },
+  "limits_validation": "Input limits are current upstream declarations, not verified maximum-length inputs. Output ceiling values were accepted with short answers, not exercised by generating full-length outputs.",
+  "reasoning_validation": "HTTP 200 alone is not proof an effort level is meaningful; five models also accepted a deliberately invalid effort. DeepSeek rejected that invalid value with HTTP 400 and code 11150.",
+  "configuration_conflict": "GLM-5.3 v2 metadata lists low/high/max and default high; v3 declares medium. The provided high profile was live-tested and is not claimed to be a universal official default."
+}
