@@ -1,0 +1,12 @@
+{
+  "model": "kimi-k3-1",
+  "messages": [
+    {
+      "role": "user",
+      "content": "请回答我的问题。"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "max_tokens": 8192,
+  "stream": false
+}
